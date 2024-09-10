@@ -1,17 +1,8 @@
-# minimal-reproduction-template
+Current behavior
+Renovate is configured to manage Dockerfile and Tekton pipeline file updates, as well as specific environment files. However, it’s not merging open pull requests for the env file updates just merging for dockerfile and tekton. The expected behavior is that Renovate should auto-merge pull requests for dependency updates according to the defined rules.
 
-First, read the [Renovate minimal reproduction instructions](https://github.com/renovatebot/renovate/blob/main/docs/development/minimal-reproductions.md).
+Expected behavior
+Renovate should automatically merge PRa for updates in Dockerfiles, Tekton pipeline files, and .env files in the config/params.env path. The updates should be merged automatically according to the configuration settings.
 
-Then replace the current `h1` with the Renovate Issue/Discussion number.
-
-## Current behavior
-
-Explain the current behavior here.
-
-## Expected behavior
-
-Explain the expected behavior here.
-
-## Link to the Renovate issue or Discussion
-
-Put your link to the Renovate issue or Discussion here.
+Link to the Renovate issue or Discussion
+https://github.com/renovatebot/renovate/discussions/31276 
